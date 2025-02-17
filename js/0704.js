@@ -7,16 +7,16 @@ formulario.addEventListener('submit', async(e) =>{
 
 
 try {    
-    const respuesta = await fetch('https://api.sheetbest.com/sheets/8846e14e-ec1b-47a2-8b47-89078169f97b', {
+    const respuesta = await fetch('https://api.sheetbest.com/sheets/0a516355-ed85-44b5-b234-25319e39b11e', {
         method: 'POST',
         mode: 'cors',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "1": formulario.data1.value,
-            "2": formulario.data2.value,
-            "3": formulario.data4.value
+            "Titular": formulario.data1.value,
+            "Debito": formulario.data2.value,
+            "Credito": formulario.data4.value
         })
     });
 
