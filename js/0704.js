@@ -14,9 +14,9 @@ try {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "Titular": formulario.data1.value,
-            "Debito": formulario.data2.value,
-            "Credito": formulario.data4.value
+            "1": formulario.data1.value,
+            "2": formulario.data2.value,
+            "3": formulario.data4.value
         })
     });
 
